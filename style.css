@@ -1,0 +1,117 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  /* Remove default margin */
+  body,
+  h1,
+  p {
+    margin: 0;
+  }
+  
+  /* Set core root defaults */
+  html {
+    font-size: 10px;
+  }
+  
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+  
+  /* Set core body defaults */
+  body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+  }
+  
+  /* Make images easier to work with */
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  /* Remove smooth scroll for people that prefer not to see them */
+  @media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+      scroll-behavior: auto;
+    }
+  
+    *,
+    *::before,
+    *::after {
+      scroll-behavior: auto !important;
+    }
+  }
+  /* Colors */
+  
+  :root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+  }
+  
+  /* Typography */
+  
+  body {
+    font-size: 1.6rem;
+    font-family: "Outfit", sans-serif;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: var(--dark-blue);
+  }
+  
+  p {
+    color: var(--grayish-blue);
+  }
+  
+  /* Body */
+  
+  body {
+    background-color: var(--light-gray);
+  }
+  
+  /* Center in Main */
+  
+  main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Card */
+  
+  .card {
+    height: 49.8rem;
+    width: 32rem;
+    border-radius: 1.5rem;
+    background-color: white;
+    box-shadow: .1rem .1rem 4rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1.6rem;
+  }
+  
+  /* QR Code */
+  img {
+    height: 28.8rem;
+    width: 28.8rem;
+    border-radius: 1.5rem;
+  }
+  
+  /* Text margins */
+  h1 {
+    margin: 3.2rem 1.6rem 2rem;
+  }
+  
+  p {
+    margin: 0 1.6rem;
+  }
